@@ -74,9 +74,10 @@ export default {
 @use "../../scss/partials/vars" as *;
   li{
     font-size: 0.8rem;
-    font-weight: 700;
     color: $secondary-color;
     cursor: pointer;
+    letter-spacing: 0.5px;
+    font-weight: 700 !important;
     transition: all .3s;
     &:hover{
       color: lighten($secondary-color, 20%);

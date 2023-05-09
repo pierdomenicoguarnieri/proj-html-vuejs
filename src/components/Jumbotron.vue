@@ -94,9 +94,14 @@ export default {
         .pg-text-wrapper{
           max-width: 600px;
           color: $primary-color;
-          font-weight: 700; 
           h1{
+            font-weight: 700 !important;
             font-size: 4rem;
+            letter-spacing: 1.5px;
+          }
+          span{
+            font-weight: 700 !important;
+            letter-spacing: 3px;
           }
         }
         .pg-btn-wrapper{
@@ -106,6 +111,7 @@ export default {
             color: $secondary-color;
             font-size: 1.1rem;
             padding: 10px 30px;
+            font-weight: 700 !important;
           }
         }
       }
