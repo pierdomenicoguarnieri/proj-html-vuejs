@@ -49,6 +49,25 @@ const navBar = [
       }
     ]
   }
+];
+
+const navBarSocial = [
+  {
+    name: "Facebook",
+    img_path:"9"
+  },
+  {
+    name: "Twitter",
+    img_path:"10"
+  },
+  {
+    name: "YouTube",
+    img_path:"11"
+  },
+  {
+    name: "Instagram",
+    img_path:"12"
+  },
 ]
 
-export {navBar};
+export {navBar, navBarSocial};
