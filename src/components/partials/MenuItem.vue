@@ -39,12 +39,13 @@ export default {
           <li
             v-for="(dropdownItem, indexItem) in dropdown"
             :key="indexItem"
-            class="text-white py-3 ps-2 border-bottom border-dark d-flex align-items-center position-relative"
+            class="py-3 ps-2 border-bottom border-dark d-flex align-items-center position-relative"
             @mouseenter="dropendOpen = true, savedIndex = indexItem"
             @mouseleave="dropendOpen = false, savedIndex = null">
 
-            <span>{{ dropdownItem.name }}</span>
+            <span class="pg-lighten">{{ dropdownItem.name }}</span>
             <img :src="getImage('../../assets/img/image-7.svg')" class="chevron-right" alt="" v-if="dropdownItem.dropendItems.length > 0">
+            
             <div
               class="pg-dropend-menu position-absolute"
               v-if="dropdownItem.dropendItems.length > 0 && dropendOpen && indexItem == savedIndex">
@@ -55,9 +56,9 @@ export default {
                   <li
                     v-for="(dropendItem, index) in dropdownItem.dropendItems"
                     :key="index"
-                    class="text-white py-3 ps-2 border-bottom border-dark d-flex align-items-center">
+                    class=" py-3 ps-2 border-bottom border-dark d-flex align-items-center">
 
-                    <span>{{ dropendItem }}</span>
+                    <span class="pg-lighten">{{ dropendItem }}</span>
                   </li>
                 </ul>
               </nav>
@@ -70,19 +71,34 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../../sass/partials/vars" as *;
+@use "../../scss/partials/vars" as *;
   li{
     font-size: 0.8rem;
     font-weight: 700;
     color: $secondary-color;
     cursor: pointer;
+    transition: all .3s;
+    &:hover{
+      color: lighten($secondary-color, 20%);
+    }
     img.chevron-down{
       width: 20%;
     }
     .pg-dropdown-menu{
       top: 100%;
       width: 250px;
-      background-color: black;
+      background-color: $secondary-color;
+      li{
+        .pg-lighten{
+          color: $primary-color;
+          transition: all .3s;
+        }
+        &:hover{
+          .pg-lighten{
+            color: darken($primary-color, 20%);
+          }
+        }
+      }
       img.chevron-right{
         position: absolute;
         top: 25%;
@@ -91,13 +107,24 @@ export default {
         filter: invert(100%);
       }
       li{
-      .pg-dropend-menu{
-        top: 0;
-        left: 100%;
-        width: 250px;
-        background-color: black;
+        .pg-dropend-menu{
+          top: 0;
+          left: 100%;
+          width: 250px;
+          background-color: $secondary-color;
+          li{
+            .pg-lighten{
+              color: $primary-color;
+              transition: all .3s;
+            }
+            &:hover{
+              .pg-lighten{
+                color: darken($primary-color, 20%);
+              }
+            }
+          }
+        }
       }
     }
   }
-}
 </style>
