@@ -88,6 +88,7 @@ export default {
       top: 100%;
       width: 250px;
       background-color: $secondary-color;
+      z-index: 999;
       li{
         .pg-lighten{
           color: $primary-color;
@@ -112,6 +113,7 @@ export default {
           left: 100%;
           width: 250px;
           background-color: $secondary-color;
+          z-index: 999;
           li{
             .pg-lighten{
               color: $primary-color;
