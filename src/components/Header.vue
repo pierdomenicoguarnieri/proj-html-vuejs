@@ -12,7 +12,7 @@ export default {
       </div>
 
       <nav>
-        Menu
+        MENU
       </nav>
 
       <nav>
@@ -29,5 +29,6 @@ export default {
     height: 80px;
     background-color: $primary-color;
     box-shadow: 0 5px 10px rgba($secondary-color, 0.1);
+    font-weight: 700;
   }
 </style>

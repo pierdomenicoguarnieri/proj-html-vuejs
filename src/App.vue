@@ -23,4 +23,5 @@ export default {
 
 <style lang="scss">
   @use "./sass/main.scss" as *;
+  @use "./sass/partials/typography" as *;
 </style>
