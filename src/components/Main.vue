@@ -29,5 +29,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+  main{
+    margin-top: 90px;
+  }
 </style>
