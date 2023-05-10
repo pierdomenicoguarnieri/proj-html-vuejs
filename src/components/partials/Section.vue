@@ -1,6 +1,16 @@
 <script>
+import Card from './cards/Card.vue';
+import { cardSection1 } from '../../data/menus';
 export default {
   name: "Section",
+  data(){
+    return{
+      cardSection1
+    }
+  },
+  components: {
+    Card 
+  },
   props:{
     smallTitle: String,
     title: String,
