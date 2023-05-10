@@ -68,6 +68,39 @@ const navBarSocial = [
     name: "Instagram",
     img_path:"12"
   },
+];
+
+const cardSection1 = [
+  {
+    title: "array of equipment",
+    text: "Lorem ipsum dolor amet, consectetur adipiscing. Pellentesque ultricies justo tellus.",
+    image: "image-14.svg"
+  },
+  {
+    title: "new technologies",
+    text: "Lorem ipsum dolor amet, consectetur adipiscing. Pellentesque ultricies justo tellus.",
+    image: "image-16.svg"
+  },
+  {
+    title: "versitile actors",
+    text: "Lorem ipsum dolor amet, consectetur adipiscing. Pellentesque ultricies justo tellus.",
+    image: "image-18.svg"
+  },
+  {
+    title: "top directors",
+    text: "Lorem ipsum dolor amet, consectetur adipiscing. Pellentesque ultricies justo tellus.",
+    image: "image-15.svg"
+  },
+  {
+    title: "minute editing",
+    text: "Lorem ipsum dolor amet, consectetur adipiscing. Pellentesque ultricies justo tellus.",
+    image: "image-17.svg"
+  },
+  {
+    title: "versitile actiors",
+    text: "Lorem ipsum dolor amet, consectetur adipiscing. Pellentesque ultricies justo tellus.",
+    image: "image-19.svg"
+  }
 ]
 
-export {navBar, navBarSocial};
+export {navBar, navBarSocial, cardSection1};
