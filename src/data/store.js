@@ -1,6 +1,8 @@
 import {reactive} from "vue";
 
 export const store = reactive({
+  showModal: false,
+  showBackUp: false,
   counter:[
     {
       name: "clients",
