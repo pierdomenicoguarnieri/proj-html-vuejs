@@ -159,4 +159,49 @@ const cardSection3 = [
   }
 ];
 
-export {navBar, navBarSocial, cardSection1, cardSection2, cardSection3};
+const cardSection4 = [
+  {
+    date: "november 06, 2021 by admin",
+    title: "recap you latest company event",
+    preview: "Suspendisse dictum dictum tempor. Ut non faucibus arcu, id elementum est. Suspendisse sed",
+    image: "blog01.jpg"
+  },
+  {
+    date: "may 27, 2022 by admin",
+    title: "how to edit a film score to serve",
+    preview: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut",
+    image: "blog02.jpg"
+  },
+  {
+    date: "may 07, 2022 by admin",
+    title: "are you ready to make it awesome",
+    preview: "Design is our playground. While we create an awesome experience, we like having fun. No animals",
+    image: "blog03.jpg"
+  },
+  {
+    date: "april 10, 2022 by admin",
+    title: "last video website you need for",
+    preview: "In as name to here them deny wise this. As rapid woody my he me which. Men but they fail shew just",
+    image: "blog04.jpg"
+  },
+  {
+    date: "march 01, 2022 by admin",
+    title: "band uprising to cult status",
+    preview: "Porta tellus aliquam ligula sollicitudin Tincidunt habitant egestas erat lectus congue nisl",
+    image: "blog05.jpg"
+  },
+  {
+    date: "febryary 14, 2022 by admin",
+    title: "bringing the stage to life",
+    preview: "Actor The Concept Movie High Concept Theory see the post As Clover Letter Emails Got",
+    image: "blog06.jpg"
+  },
+  {
+    date: "december 07, 2021 by admin",
+    title: "cadenze rios picked for the next picture",
+    preview: "Inhabit hearing perhaps on ye do no. It maids decay as there he. Smallest on suitable disposed do",
+    image: "blog07.jpg"
+  }
+];
+
+export {navBar, navBarSocial, cardSection1, cardSection2, cardSection3, cardSection4};
