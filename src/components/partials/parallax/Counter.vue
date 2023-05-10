@@ -13,6 +13,33 @@ export default {
         this.startCount(element.numberToShow, element.limit, element.interval, element.name, index);
       });
     },
+    startCount(number, limit, interval, variable, index){
+      setInterval(() => {
+        if (number < limit){
+          switch (variable) {
+            case "clients":
+                number++;
+                store.counter[index].numberToShow = number;
+              break;
+            case "projects":
+                number++;
+                store.counter[index].numberToShow = number;
+              break;
+            case "coffe":
+                number += 10;
+                store.counter[index].numberToShow = number;
+              break;
+            case "awards":
+                number++;
+                store.counter[index].numberToShow = number;
+              break;
+          
+            default:
+              break;
+          }
+        }
+      }, interval);
+    },
     checkIfVisible(){
       const parallax = document.getElementById("parallax1");
       let scrollY;
