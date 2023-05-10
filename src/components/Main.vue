@@ -1,11 +1,15 @@
 <script>
+import Section from './partials/Section.vue'
 export default {
-  name: "Main"
+  name: "Main",
+  components: {
+    Section
+  }
 }
 </script>
 
 <template>
-  <h1>Main</h1>
+  <Section smallTitle="pelicula studio" title="this is what we do"/>
 </template>
 
 <style lang="scss" scoped>
