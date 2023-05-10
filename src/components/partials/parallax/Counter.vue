@@ -1,3 +1,12 @@
+<script>
+import {store} from "../../../data/store.js";
+export default {
+  name: "Counter",
+  data(){
+    return{
+      store
+    }
+  },
   },
   mounted(){
     this.checkIsVisible();
