@@ -1,0 +1,49 @@
+.cardSwiper{
+  height: 500px;
+  padding: 0 30px;
+  .swiper-button-next,
+  .swiper-button-prev{
+    opacity: 0;
+    top: 30%;
+    color: black;
+    transition: all .3s;
+    &::after{
+      font-size: 30px;
+    }
+  }
+  &:hover{
+    .swiper-button-next,
+    .swiper-button-prev{
+      opacity: 1;
+    }
+  }
+}
+
+.mySwiper{
+  .swiper-button-next,
+  .swiper-button-prev{
+    opacity: 0;
+    color: white;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(black, 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after{
+      font-size: 15px;
+    }
+  }
+  .swiper-button-next:hover{
+    background-color: black;
+  }
+  .swiper-button-prev:hover{
+    background-color: black;
+  }
+  &:hover{
+    .swiper-button-next,
+    .swiper-button-prev{
+      opacity: 1;
+    }
+  }
+}
