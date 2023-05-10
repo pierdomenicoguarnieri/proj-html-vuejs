@@ -101,6 +101,62 @@ const cardSection1 = [
     text: "Lorem ipsum dolor amet, consectetur adipiscing. Pellentesque ultricies justo tellus.",
     image: "image-19.svg"
   }
-]
+];
 
-export {navBar, navBarSocial, cardSection1};
+const cardSection2 = [
+  {
+    title: "seventeenth summer",
+    category: "commercial, music video.",
+    image: "Gallery-01.jpg"
+  },
+  {
+    title: "a message to space",
+    category: "short film",
+    image: "Gallery-02.jpg"
+  },
+  {
+    title: "the most beautiful thing",
+    category: "music video",
+    image: "Gallery-03.jpg"
+  },
+  {
+    title: "permission to speak",
+    category: "documentary",
+    image: "Gallery-04.jpg"
+  },
+  {
+    title: "explore our space",
+    category: "film noir",
+    image: "Gallery-05.jpg"
+  },
+  {
+    title: "film production",
+    category: "blaxploitation",
+    image: "Gallery-06.jpg"
+  }
+];
+
+const cardSection3 = [
+  {
+    name: "fabricio guerra",
+    role: "main director",
+    image: "Team-01.jpg"
+  },
+  {
+    name: "umberto pagota",
+    role: "main writer",
+    image: "Team-02.jpg"
+  },
+  {
+    name: "gloria riccasso",
+    role: "main producer",
+    image: "Team-03.jpg"
+  },
+  {
+    name: "lio napoin",
+    role: "cameraman",
+    image: "Team-04.jpg"
+  }
+];
+
+export {navBar, navBarSocial, cardSection1, cardSection2, cardSection3};
