@@ -49,15 +49,23 @@ export default {
         <img :src="getImage('../assets/img/main-banner-1.jpg')" alt="">
         <div class="pg-content-slide position-absolute h-100 w-100 top-0 start-0 text-uppercase d-flex align-items-center text-uppercase">
           
-          <div class="pg-content-wrapper d-flex flex-column">
-            <div class="pg-text-wrapper mb-4">
-              <span class="mb-3">Cinemato Studio</span>
-              <h1>Action and inspire people</h1>
+          <div class="container p-0">
+
+            <div class="pg-content-wrapper d-flex flex-column">
+            
+              <div class="pg-text-wrapper mb-4">
+                <span class="mb-3">Cinemato Studio</span>
+                <h1>Action and inspire people</h1>
+              </div>
+            
+              <div class="pg-btn-wrapper">
+                <button type="button" class="text-uppercase">read more</button>
+              </div>
+
             </div>
-            <div class="pg-btn-wrapper">
-              <button type="button" class="text-uppercase">read more</button>
-            </div>
+
           </div>
+
         </div>
       </swiper-slide>
       <swiper-slide>
@@ -65,15 +73,23 @@ export default {
 
         <div class="pg-content-slide position-absolute h-100 w-100 top-0 start-0 text-uppercase d-flex align-items-center text-uppercase">
 
-          <div class="pg-content-wrapper d-flex flex-column">
-            <div class="pg-text-wrapper mb-4">
-              <span class="mb-3">Cinemato Director</span>
-              <h1>Dancing with of the stars</h1>
+          <div class="container p-0">
+
+            <div class="pg-content-wrapper d-flex flex-column">
+
+              <div class="pg-text-wrapper mb-4">
+                <span class="mb-3">Cinemato Director</span>
+                <h1>Dancing with of the stars</h1>
+              </div>
+
+              <div class="pg-btn-wrapper">
+                <button type="button" class="text-uppercase">read more</button>
+              </div>
+
             </div>
-            <div class="pg-btn-wrapper">
-              <button type="button" class="text-uppercase">read more</button>
-            </div>
+
           </div>
+
         </div>
       </swiper-slide>
     </swiper>
@@ -90,7 +106,7 @@ export default {
   }
   .swiper-slide{
     .pg-content-slide{
-      padding: 0 15%;
+      // padding: 0 15%;
       .pg-content-wrapper{
         .pg-text-wrapper{
           max-width: 600px;
