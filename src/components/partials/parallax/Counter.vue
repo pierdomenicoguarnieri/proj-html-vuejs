@@ -13,9 +13,17 @@ export default {
         this.startCount(element.numberToShow, element.limit, element.interval, element.name, index);
       });
     },
+    checkIfVisible(){
+      const parallax = document.getElementById("parallax1");
+      let scrollY;
+      window.addEventListener('scroll',() =>{
+        scrollY = window.scrollY
+        scrollY > 2500 ? this.callInterval() : null
+      })
+    }
   },
   mounted(){
-    this.checkIsVisible();
+    this.checkIfVisible();
   }
 }
 </script>
