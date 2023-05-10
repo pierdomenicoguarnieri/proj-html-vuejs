@@ -10,6 +10,7 @@ export default {
 
 <template>
   <Section smallTitle="pelicula studio" title="this is what we do"/>
+  <Section smallTitle="your watchlist" title="best hits movie"/>
 </template>
 
 <style lang="scss" scoped>
