@@ -7,6 +7,12 @@ export default {
       store
     }
   },
+  methods:{
+    callInterval(){
+      store.counter.forEach((element, index) => {
+        this.startCount(element.numberToShow, element.limit, element.interval, element.name, index);
+      });
+    },
   },
   mounted(){
     this.checkIsVisible();
