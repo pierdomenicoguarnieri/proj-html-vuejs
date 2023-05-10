@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/swiper.css";
 
 // Import required modules
-import { Navigation,} from "swiper";
+import { Navigation } from "swiper";
 import BlogPost from "../BlogPost.vue";
 
   export default {

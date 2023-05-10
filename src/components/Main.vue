@@ -1,15 +1,18 @@
 <script>
+import AboutUs from './partials/AboutUs.vue';
 import Section from './partials/Section.vue'
 export default {
   name: "Main",
   components: {
-    Section
-  }
+    Section,
+    AboutUs
+}
 }
 </script>
 
 <template>
   <Section smallTitle="pelicula studio" title="this is what we do"/>
+  <AboutUs/>
   <Section smallTitle="your watchlist" title="best hits movie"/>
   <Section smallTitle="the pericuros" title="meet the team"/>
   <Section smallTitle="latest news" title="articles updated daily"/>
