@@ -1,3 +1,10 @@
+  },
+  mounted(){
+    this.checkIsVisible();
+  }
+}
+</script>
+
 <template>
   <div class="pg-counter-container py-5" id="parallax1">
     <div class="container">
