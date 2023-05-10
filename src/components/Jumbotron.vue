@@ -33,7 +33,7 @@ export default {
 </script>
 
 <template>
-  <div class="pg-jumbotron">
+  <div class="pg-jumbotron" id="home">
     <swiper
       :spaceBetween="0"
       :loop="true"
@@ -101,6 +101,12 @@ export default {
 .pg-jumbotron{
   height: 800px;
   margin-top: 90px;
+  &::before{
+    content: '';
+    display: block;
+    height: 90px;
+    margin: -90px 0 0 ;
+  }
   .swiper{
     height: 100%;
   }
