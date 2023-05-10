@@ -28,6 +28,7 @@ export default {
   <header>
     <div class="container-fluid h-100 d-flex justify-content-between align-items-center ps-5">
       <div class="row row-cols-3 w-100 h-100">
+        
         <div class="col d-flex h-100 justify-content-start">
           <div class="pg-logo h-100 w-100 py-4">
             <img class="h-100" :src="getImage('../assets/img/logo.svg')" alt="">
@@ -64,6 +65,11 @@ export default {
     box-shadow: 0 5px 10px rgba($secondary-color, 0.1);
     color: $secondary-color;
     font-weight: 700;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
   }
   .pg-nav{
     width: 30%;

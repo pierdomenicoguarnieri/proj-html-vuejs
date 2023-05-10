@@ -35,6 +35,7 @@ export default {
     width: 100vw;
     background-color: rgba(black, 90%);
     font-size: 1.2rem;
+    z-index: 9999999;
     .pg-input-container{
       input{
         width: 800px;

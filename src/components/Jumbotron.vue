@@ -84,6 +84,7 @@ export default {
 @use "../scss/partials/vars" as *;
 .pg-jumbotron{
   height: 800px;
+  margin-top: 90px;
   .swiper{
     height: 100%;
   }
