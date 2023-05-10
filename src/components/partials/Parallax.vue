@@ -1,5 +1,7 @@
 <script>
+import Counter from './parallax/Counter.vue'
 export default {
+  components: { Counter },
   name: "Parallax",
   props:{
     className: String
@@ -9,13 +11,12 @@ export default {
 
 <template>
   <div class="pg-parallax" :class="className">
-
+    <Counter v-if="className == 'img-1'"/>
   </div>
 </template>
 
 <style lang="scss" scoped>
   .pg-parallax {
-    min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
