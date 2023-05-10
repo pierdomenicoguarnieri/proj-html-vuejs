@@ -51,7 +51,7 @@ export default {
           
           <div class="container p-0">
 
-            <div class="pg-content-wrapper d-flex flex-column">
+            <div class="pg-content-wrapper d-flex flex-column px-4">
             
               <div class="pg-text-wrapper mb-4">
                 <span class="mb-3">Cinemato Studio</span>
@@ -75,7 +75,7 @@ export default {
 
           <div class="container p-0">
 
-            <div class="pg-content-wrapper d-flex flex-column">
+            <div class="pg-content-wrapper d-flex flex-column px-4">
 
               <div class="pg-text-wrapper mb-4">
                 <span class="mb-3">Cinemato Director</span>
