@@ -21,7 +21,14 @@ export default {
 <template>
   <section class="py-5 d-flex align-items-center justify-content-center flex-column text-uppercase">
     <span class="mb-4">{{smallTitle}}</span>
-    <h2>{{title}}</h2>
+    <h2 class="mb-5">{{title}}</h2>
+
+    <div class="container">
+      <div class="row row-cols-3">
+        <Card v-for="(card, index) in cardSection1" :key="index" :title="card.title" :text="card.text" :image="card.image"/>
+      </div>
+    </div>
+
   </section>
 </template>
 
