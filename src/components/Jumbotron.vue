@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 
 import "swiper/swiper.css";
 
-// import required modules
+// Import required modules
 import {  Autoplay, EffectFade, Navigation, Pagination } from "swiper";
 
 export default {

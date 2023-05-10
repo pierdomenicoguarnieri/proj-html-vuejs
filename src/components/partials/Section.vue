@@ -48,9 +48,7 @@ export default {
     </div>
 
     <div class="container" v-if="smallTitle == 'latest news'">
-      <div class="row row-cols-4">
-        <CardSwiper/>
-      </div>
+      <CardSwiper/>
     </div>
   </section>
 </template>
