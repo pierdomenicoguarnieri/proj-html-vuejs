@@ -17,24 +17,14 @@ export default {
       setInterval(() => {
         if (number < limit){
           switch (variable) {
-            case "clients":
-                number++;
-                store.counter[index].numberToShow = number;
-              break;
-            case "projects":
-                number++;
-                store.counter[index].numberToShow = number;
-              break;
             case "coffe":
                 number += 10;
                 store.counter[index].numberToShow = number;
               break;
-            case "awards":
-                number++;
-                store.counter[index].numberToShow = number;
-              break;
           
             default:
+                number++;
+                store.counter[index].numberToShow = number;
               break;
           }
         }
