@@ -32,10 +32,11 @@ export default {
     },
     checkIfVisible(){
       const parallax = document.getElementById("parallax1");
+      const poitOfTrigger = parallax.offsetTop -  (parallax.offsetHeight * 2);
       let scrollY;
       window.addEventListener('scroll',() =>{
         scrollY = window.scrollY
-        scrollY > 2500 ? this.callInterval() : null
+        scrollY > poitOfTrigger ? this.callInterval() : null
       })
     }
   },
