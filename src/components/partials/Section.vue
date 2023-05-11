@@ -50,6 +50,8 @@ export default {
     <div class="container pg-custom-container" v-if="smallTitle == 'latest news'">
       <CardSwiper/>
     </div>
+
+    
   </section>
 </template>
 
