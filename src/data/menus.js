@@ -224,4 +224,87 @@ const swiperParallax = [
 
 const swiperParallaxAuto = ["01.png", "02.png", "03.png", "04.png", "05.png"];
 
-export {navBar, navBarSocial, cardSection1, cardSection2, cardSection3, cardSection4, swiperParallax, swiperParallaxAuto};
+const footerMenu = [
+  {
+    label: "contact info",
+    links:[
+      {
+        image: "footer-location-dot-solid.svg",
+        text: "2/45 Tower Street, New York USA",
+        isLink: false
+      },
+      {
+        image: "footer-phone-solid.svg",
+        text: "Call us on 0800 840 1010",
+        isLink: false
+      },
+      {
+        image: "footer-envelope-solid.svg",
+        text: "demo@example.com",
+        isLink: true
+      },
+    ]
+  },
+  {
+    label: "information",
+    links:[
+      {
+        image: "",
+        text: "product support",
+        isLink: true
+      },
+      {
+        image: "",
+        text: "checkout",
+        isLink: true
+      },
+      {
+        image: "",
+        text: "report abuse",
+        isLink: true
+      },
+      {
+        image: "",
+        text: "redeem voucher",
+        isLink: true
+      },
+      {
+        image: "",
+        text: "order status",
+        isLink: true
+      },
+    ]
+  },
+  {
+    label: "useful links",
+    links:[
+      {
+        image: "",
+        text: "policies & rules",
+        isLink: true
+      },
+      {
+        image: "",
+        text: "privacy policy",
+        isLink: true
+      },
+      {
+        image: "",
+        text: "license policy",
+        isLink: true
+      },
+      {
+        image: "",
+        text: "my account",
+        isLink: true
+      },
+      {
+        image: "",
+        text: "locality",
+        isLink: true
+      },
+    ]
+  },
+];
+
+export {navBar, navBarSocial, cardSection1, cardSection2, cardSection3, cardSection4, swiperParallax, swiperParallaxAuto, footerMenu};
