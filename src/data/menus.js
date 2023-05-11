@@ -204,4 +204,22 @@ const cardSection4 = [
   }
 ];
 
-export {navBar, navBarSocial, cardSection1, cardSection2, cardSection3, cardSection4};
+const swiperParallax = [
+  {
+    name: "john doe",
+    role: "designer",
+    image: "01.jpg"
+  },
+  {
+    name: "john doe",
+    role: "designer",
+    image: "02.jpg"
+  },
+  {
+    name: "john doe",
+    role: "designer",
+    image: "03.jpg"
+  }
+];
+
+export {navBar, navBarSocial, cardSection1, cardSection2, cardSection3, cardSection4, swiperParallax};
