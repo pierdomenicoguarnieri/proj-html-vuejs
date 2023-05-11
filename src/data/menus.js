@@ -222,4 +222,6 @@ const swiperParallax = [
   }
 ];
 
-export {navBar, navBarSocial, cardSection1, cardSection2, cardSection3, cardSection4, swiperParallax};
+const swiperParallaxAuto = ["01.png", "02.png", "03.png", "04.png", "05.png"];
+
+export {navBar, navBarSocial, cardSection1, cardSection2, cardSection3, cardSection4, swiperParallax, swiperParallaxAuto};
