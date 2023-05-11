@@ -47,7 +47,7 @@ export default {
       </div>
     </div>
 
-    <div class="container" v-if="smallTitle == 'latest news'">
+    <div class="container pg-custom-container" v-if="smallTitle == 'latest news'">
       <CardSwiper/>
     </div>
   </section>
@@ -55,6 +55,10 @@ export default {
 
 <style lang="scss" scoped>
 @use "../../scss/partials/vars" as *;
+
+  .container.pg-custom-container{
+    max-width: 1500px !important;
+  }
   section{
     background-color: $primary-color;
   }
