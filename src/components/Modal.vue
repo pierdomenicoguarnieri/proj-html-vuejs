@@ -16,11 +16,18 @@ export default {
 </script>
 
 <template>
-  <div class="pg-modal-wrapper d-flex justify-content-center align-items-center" @click="store.showModal = false" v-if="store.showModal">
+  <div
+      class="pg-modal-wrapper d-flex justify-content-center align-items-center"
+      @click="store.showModal = false"
+      v-if="store.showModal">
+
     <div class="pg-input-container d-flex justify-content-center position-relative">
+
       <input @click.stop type="text" class="bg-transparent" placeholder="search...">
       <img :src="getImage('../assets/img/image-23.svg')" class="position-absolute" alt="">
+
     </div>
+    
     <img :src="getImage('../assets/img/image-22.svg')" class="pg-cross position-absolute top-0 end-0 py-3 pe-4" @click.stop="store.showModal = false">
   </div>
 </template>

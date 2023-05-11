@@ -18,12 +18,15 @@ export default {
 <template>
   <div class="col h-100 mb-5 px-3">
 
+    <!-- Col wrapper -->
     <div class="pg-col-wrapper w-100 h-100">
 
+      <!-- Image containe -->
       <div class="pg-img-container overflow-hidden">
         <img :src="getImage(`../../assets/img/${image}`)" alt="">
       </div>
 
+      <!-- Text container -->
       <div class="pg-text-container">
         <span>{{ date }}</span>
         <h5 class="mt-2">{{ title }}</h5>

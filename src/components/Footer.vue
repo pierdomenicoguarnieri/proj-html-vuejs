@@ -10,11 +10,16 @@ export default {
 <template>
   <footer>
     <div class="container pt-5">
+      <!-- FooterTop component -->
       <FooterTop/>
+      
+      <!-- Copyright container -->
       <div class="pg-copyright text-center w-100 py-4">
         <span>© 2023 All Rights Reserved. Developed By TemplateMela</span>
       </div>
+
     </div>
+    
   </footer>
 </template>
 

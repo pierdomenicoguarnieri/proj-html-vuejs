@@ -21,6 +21,7 @@ export default {
 </script>
 
 <template>
+  <!-- Li con trigger del dropdown menu -->
   <li
     class="text-uppercase d-flex align-items-center h-100 position-relative"
     @mouseenter="dropdownOpen = true"
@@ -29,6 +30,7 @@ export default {
     <span class="me-1">{{name}}</span>
     <img v-if="dropdown.length > 0" class="chevron-down" :src="getImage('../../assets/img/image-7.svg')" alt="">
 
+    <!-- Dropdown menu con condizione -->
     <div
       class="pg-dropdown-menu position-absolute"
       v-if="dropdown.length > 0 && dropdownOpen">
@@ -36,6 +38,7 @@ export default {
       <nav>
         <ul class="list-unstyled">
 
+          <!-- Li con trigger del dropend menu -->
           <li
             v-for="(dropdownItem, indexItem) in dropdown"
             :key="indexItem"
@@ -46,6 +49,7 @@ export default {
             <span class="pg-lighten">{{ dropdownItem.name }}</span>
             <img :src="getImage('../../assets/img/image-7.svg')" class="chevron-right" alt="" v-if="dropdownItem.dropendItems.length > 0">
             
+            <!-- Dropend menu con condizione -->
             <div
               class="pg-dropend-menu position-absolute"
               v-if="dropdownItem.dropendItems.length > 0 && dropendOpen && indexItem == savedIndex">
@@ -63,11 +67,16 @@ export default {
                 </ul>
               </nav>
             </div>
+
           </li>
+
         </ul>
+
       </nav>
+
     </div>
-    </li>
+
+  </li>
 </template>
 
 <style lang="scss" scoped>

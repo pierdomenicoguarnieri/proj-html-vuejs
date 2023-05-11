@@ -34,6 +34,7 @@ export default {
 
 <template>
   <div class="pg-jumbotron" id="home">
+
     <swiper
       :spaceBetween="0"
       :loop="true"
@@ -45,19 +46,23 @@ export default {
       :navigation="true"
       :modules="modules"
       class="mySwiper">
+
+      <!-- Swiper Slide -->
       <swiper-slide class="position-relative">
+
         <img :src="getImage('../assets/img/main-banner-1.jpg')" alt="">
         <div class="pg-content-slide position-absolute h-100 w-100 top-0 start-0 text-uppercase d-flex align-items-center text-uppercase">
           
           <div class="container p-0">
 
             <div class="pg-content-wrapper d-flex flex-column px-4">
-            
+              
               <div class="pg-text-wrapper mb-4">
                 <span class="mb-3">Cinemato Studio</span>
                 <h1>Action and inspire people</h1>
               </div>
-            
+              
+              <!-- Button container -->
               <div class="pg-btn-wrapper">
                 <button type="button" class="text-uppercase">read more</button>
               </div>

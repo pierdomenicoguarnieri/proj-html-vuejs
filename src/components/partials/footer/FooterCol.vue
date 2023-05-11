@@ -17,13 +17,22 @@ export default {
   <div class="col px-4">
     <span class="title">{{ title }}</span>
     <nav class="mt-3">
+
       <ul class="list-unstyled">
-        <li v-for="(link, index) in array" :key="index" class="d-flex align-items-start py-2">
+
+        <li
+          v-for="(link, index) in array"
+          :key="index"
+          class="d-flex align-items-start py-2">
+
           <img v-if="link.image != ''" :src="getImage(`../../../assets/img/${link.image}`)" class="me-3" alt="">
           <span class="undertext" :class="{'pg-link' : link.isLink}">{{ link.text }}</span>
         </li>
+
       </ul>
+
     </nav>
+    
   </div>
 </template>
 

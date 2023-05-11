@@ -31,6 +31,7 @@
 </script>
 
 <template>
+  <!-- Container -->
   <div class="container">
     <swiper
       :slidesPerView="5"
@@ -45,13 +46,18 @@
       }"
       :modules="modules"
       class="parallaxAutoSwiper">
+
+      <!-- Stampo due volte le stesse immagini poiché avendo visualizzato 5 immagini nello swiper non avrei più avuto lo scorrimento di quest'ultimo, stampandole 32 volte avrò 10 elementi nello swiper che mi permettono di scorrere tra le slides -->
       <swiper-slide v-for="(image, index) in swiperParallaxAuto" :key="index" class="d-flex justify-content-center">
         <img :src="getImage(`../../../assets/img/${image}`)" alt="">
       </swiper-slide>
+
       <swiper-slide v-for="(image, index) in swiperParallaxAuto" :key="index" class="d-flex justify-content-center">
         <img :src="getImage(`../../../assets/img/${image}`)" alt="">
       </swiper-slide>
+
     </swiper>
+    
   </div>
 </template>
 

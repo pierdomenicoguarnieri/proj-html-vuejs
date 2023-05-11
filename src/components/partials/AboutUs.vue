@@ -5,17 +5,26 @@ export default {
 </script>
 
 <template>
+  <!-- About us container -->
   <div class="pg-aboutus-container d-flex justify-content-end align-items-center">
+
+    <!-- Text wrapper -->
     <div class="pg-text-wrapper h-100 w-50 text-white d-flex flex-column justify-content-center">
+
+
       <span class="text-uppercase mb-3">About us</span>
       <h2 class="text-uppercase mb-3">High quality cinematics</h2>
       <p>
         Orci varius penatibus et magnis dis parturient In the montes, nascetur ridiculus mus. Nulla A nisi ut mi efficitur hendrerit. nunc urna. quisque a partr hendrerit purus erat, nec dapibus sem sed. phasellus sed eli molestie, porttitor ligula of the egestas, mattis augue. quisque et rhoncus justo. suspendisse luctus pharetra eleme tcondimentum.
       </p>
+
+      <!-- Button wrapper -->
       <div class="pg-btn-wrapper mt-3">
         <button type="button" class="text-uppercase">read more</button>
       </div>
+
     </div>
+    
   </div>
 </template>
 

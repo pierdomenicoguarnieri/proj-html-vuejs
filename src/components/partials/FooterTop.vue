@@ -14,18 +14,34 @@ export default {
 
 <template>
   <div class="row row-cols-4 py-5 border-2 border-bottom border-dark">
-    <FooterCol v-for="(col, index) in footerMenu" :key="index" :title="col.label" :array="col.links"/>
 
+    <!-- FooterCol componet -->
+    <FooterCol
+      v-for="(col, index) in footerMenu"
+      :key="index"
+      :title="col.label"
+      :array="col.links"/>
+
+    <!-- Right col -->
     <div class="col px-4">
+
     <span class="title">newsletter</span>
+
+      <!-- Newsletter container -->
       <div class="pg-newsletter-container d-flex flex-column mt-3">
+
         <span class="undertext py-2">Subsribe to recive inspiration, ideas & news in your inbox.</span>
         <input type="text" class="mt-2" placeholder="Enter your email">
+        
+        <!-- Button container -->
         <div class="pg-btn-container mt-3">
           <button type="button">subscribe</button>
         </div>
+
       </div>
+
     </div>
+    
   </div>
 </template>
 

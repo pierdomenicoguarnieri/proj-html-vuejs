@@ -41,12 +41,18 @@ import BlogPost from "../BlogPost.vue";
     :rewind="true"
     :modules="modules"
     class="cardSwiper">
-    <swiper-slide v-for="(slide, index) in cardSection4" :key="index">
+
+    <!-- Swiper slide -->
+    <swiper-slide
+      v-for="(slide, index) in cardSection4"
+      :key="index">
+
+      <!-- BlogPost component -->
       <BlogPost
         :title="slide.title"
         :preview="slide.preview"
         :image="slide.image"
-        :date="slide.date" />
+        :date="slide.date"/>
     </swiper-slide>
   </swiper>
 </template>

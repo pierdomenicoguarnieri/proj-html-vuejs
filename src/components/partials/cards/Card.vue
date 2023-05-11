@@ -17,12 +17,15 @@ export default {
 <template>
   <div class="col mb-5 px-3">
 
+    <!-- Col wrapper -->
     <div class="pg-col-wrapper h-100">
 
+      <!-- Image contanier -->
       <div class="pg-img-container d-flex align-items-center justify-content-center mb-4 h-50 w-100">
         <img :src="getImage(`../../../assets/img/${image}`)" class="p-2" alt="">
       </div>
 
+      <!-- Text container -->
       <div class="pg-text-container text-center">
         <h5>{{ title }}</h5>
         <p>{{ text }}</p>

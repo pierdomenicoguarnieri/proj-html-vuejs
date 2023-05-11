@@ -17,19 +17,22 @@ export default {
 <template>
   <div class="col mb-5 px-3">
 
+    <!-- Cl wrapper -->
     <div class="pg-col-wrapper w-100 h-100">
 
+      <!-- Image container -->
       <div class="pg-img-container mb-4 overflow-hidden">
         <img :src="getImage(`../../../assets/img/${image}`)" alt="">
       </div>
 
+      <!-- Text container -->
       <div class="pg-text-container text-center">
         <h5>{{ title }}</h5>
         <p class="text-capitalize">{{ text }}</p>
       </div>
 
     </div>
-    
+
   </div>
 </template>
 

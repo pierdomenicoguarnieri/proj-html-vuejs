@@ -31,32 +31,49 @@
 </script>
 
 <template>
+  <!-- Swiper container -->
   <div class="pg-swiper-container">
 
+    <!-- Quote image -->
     <div class="img-container d-flex align-items-center justify-content-center mb-5">
       <img src="../../../assets/img/image-20.svg" alt="">
     </div>
 
+    <!-- Swiper -->
     <swiper
-      
       :spaceBetween="30"
       :pagination="{
         clickable: true,
       }"
       :modules="modules"
       class="parallaxSwiper">
-      <swiper-slide v-for="(slide, index) in swiperParallax" :key="index">
-        <p>Curabitur bibendum ex ut sapien blandit viverra. Nunc lobortis mi dui, id <br> Etiam tempor sit amet metus in bibendum. Nunc eros risus, pellentesque a augue Pellentesque fringilla eget mi eu mollis. Mauris commodo</p>
+
+      <swiper-slide
+        v-for="(slide, index) in swiperParallax"
+        :key="index">
+
+        <p>
+          Curabitur bibendum ex ut sapien blandit viverra. Nunc lobortis mi dui, id <br> Etiam tempor sit amet metus in bibendum. Nunc eros risus, pellentesque a augue Pellentesque fringilla eget mi eu mollis. Mauris commodo
+        </p>
+
+        <!-- Info wrapper -->
         <div class="pg-info-wrapper d-flex w-100 d-flex justify-content-center align-items-center">
+
           <img :src="getImage(`../../../assets/img/${slide.image}`)" class="rounded-circle overflow-hidden" alt="">
 
+          <!-- Text wrapper -->
           <div class="pg-text-wrapper d-flex flex-column justify-content-center h-100 ms-3">
+
             <span class="text-uppercase title">{{ slide.name }}</span>
             <span class="text-capitalize">{{ slide.role }}</span>
           </div>
+
         </div>
+
       </swiper-slide>
+
     </swiper>
+    
   </div>
 </template>
 
