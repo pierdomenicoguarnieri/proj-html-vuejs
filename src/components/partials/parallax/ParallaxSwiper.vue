@@ -47,10 +47,10 @@
       class="parallaxSwiper">
       <swiper-slide v-for="(slide, index) in swiperParallax" :key="index">
         <p>Curabitur bibendum ex ut sapien blandit viverra. Nunc lobortis mi dui, id <br> Etiam tempor sit amet metus in bibendum. Nunc eros risus, pellentesque a augue Pellentesque fringilla eget mi eu mollis. Mauris commodo</p>
-        <div class="pg-info-wrapper d-flex w-100 d-lg-flex justify-content-center">
+        <div class="pg-info-wrapper d-flex w-100 d-flex justify-content-center align-items-center">
           <img :src="getImage(`../../../assets/img/${slide.image}`)" class="rounded-circle overflow-hidden" alt="">
 
-          <div class="pg-text-wrapper d-flex flex-column ms-3">
+          <div class="pg-text-wrapper d-flex flex-column justify-content-center h-100 ms-3">
             <span class="text-uppercase title">{{ slide.name }}</span>
             <span class="text-capitalize">{{ slide.role }}</span>
           </div>
@@ -84,10 +84,18 @@
         text-align: center;
         line-height: 40px;
       }
-      .pg-text-wrapper{
-        .title{
-          font-weight: $fw-bold;
-          font-size: $fs-medium;
+      .pg-info-wrapper{
+        img{
+          width: 7%;
+        }
+        .pg-text-wrapper{
+          span{
+            font-size: $fs-small;
+          }
+          .title{
+            font-weight: $fw-bold;
+            font-size: 15px;
+          }
         }
       }
     }
