@@ -11,6 +11,9 @@ export default {
   <footer>
     <div class="container pt-5">
       <FooterTop/>
+      <div class="pg-copyright text-center w-100 py-4">
+        <span>© 2023 All Rights Reserved. Developed By TemplateMela</span>
+      </div>
     </div>
   </footer>
 </template>
@@ -21,5 +24,9 @@ export default {
   footer{
     background-color: $secondary-color;
     color: $primary-color;
+    .pg-copyright{
+      color: darken($primary-color, 20%);
+      font-size: 17px;
+    }
   }
 </style>
