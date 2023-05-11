@@ -1,4 +1,5 @@
 <script>
+import Cta from './Cta.vue';
 import AboutUs from './partials/AboutUs.vue';
 import BackToTop from './partials/BackToTop.vue';
 import Parallax from './partials/Parallax.vue';
@@ -9,8 +10,9 @@ export default {
     Section,
     AboutUs,
     Parallax,
-    BackToTop
-  }
+    BackToTop,
+    Cta
+}
 }
 </script>
 
@@ -24,6 +26,7 @@ export default {
     <Parallax className="img-2"/>
     <Section smallTitle="latest news" title="articles updated daily"/>
     <Parallax className="img-3"/>
+    <Cta/>
     <BackToTop/>
   </main>
 </template>
