@@ -20,13 +20,13 @@ export default {
 
     <div class="pg-col-wrapper w-100 h-100">
 
-      <div class="pg-img-container mb-4 overflow-hidden">
+      <div class="pg-img-container overflow-hidden">
         <img :src="getImage(`../../assets/img/${image}`)" alt="">
       </div>
 
-      <div class="pg-text-container text-center">
+      <div class="pg-text-container">
         <span>{{ date }}</span>
-        <h5>{{ title }}</h5>
+        <h5 class="mt-2">{{ title }}</h5>
         <p class="text-capitalize">{{ preview }}</p>
       </div>
 
@@ -56,9 +56,10 @@ export default {
       }
       p{
         text-transform: none;
-        color: $secondary-color-light;
+        color: lighten($secondary-color, 5%);
       }
       span{
+        text-transform: capitalize;
         color: $secondary-color-light;
       }
     }
