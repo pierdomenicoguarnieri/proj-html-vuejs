@@ -22,7 +22,7 @@ export default {
     <div class="pg-col-wrapper w-100 h-100">
 
       <!-- Image containe -->
-      <div class="pg-img-container overflow-hidden">
+      <div class="pg-img-container overflow-hidden mb-3">
         <img :src="getImage(`../../assets/img/${image}`)" alt="">
       </div>
 
@@ -44,7 +44,6 @@ export default {
     .pg-col-wrapper{
       .pg-img-container{
         width: 100%;
-        aspect-ratio: 4/3;
         img{
           width: 100%;
           height: 100%;

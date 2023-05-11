@@ -51,6 +51,7 @@ export default {
       <swiper-slide class="position-relative">
 
         <img :src="getImage('../assets/img/main-banner-1.jpg')" alt="">
+        
         <div class="pg-content-slide position-absolute h-100 w-100 top-0 start-0 text-uppercase d-flex align-items-center text-uppercase">
           
           <div class="container p-0">
@@ -73,7 +74,9 @@ export default {
 
         </div>
       </swiper-slide>
+
       <swiper-slide>
+
         <img :src="getImage('../assets/img/main-banner-2.jpg')" alt="">
 
         <div class="pg-content-slide position-absolute h-100 w-100 top-0 start-0 text-uppercase d-flex align-items-center text-uppercase">
