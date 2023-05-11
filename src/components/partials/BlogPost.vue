@@ -54,13 +54,22 @@ export default {
           }
         }
       }
-      p{
-        text-transform: none;
-        color: lighten($secondary-color, 5%);
-      }
-      span{
-        text-transform: capitalize;
-        color: $secondary-color-light;
+      .pg-text-container{
+        h5{
+          font-size: 16px;
+          transition: all .3s;
+          &:hover{
+            color: lighten($secondary-color, 30%);
+          }
+        }
+        p{
+          text-transform: none;
+          color: lighten($secondary-color, 5%);
+        }
+        span{
+          text-transform: capitalize;
+          color: $secondary-color-light;
+        }
       }
     }
   }
