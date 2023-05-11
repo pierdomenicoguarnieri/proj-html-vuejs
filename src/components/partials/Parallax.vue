@@ -1,7 +1,8 @@
 <script>
 import Counter from './parallax/Counter.vue'
+import ParallaxSwiper from './parallax/ParallaxSwiper.vue'
 export default {
-  components: { Counter },
+  components: { Counter, ParallaxSwiper },
   name: "Parallax",
   props:{
     className: String
@@ -12,6 +13,7 @@ export default {
 <template>
   <div class="pg-parallax" :class="className">
     <Counter v-if="className == 'img-1'"/>
+    <ParallaxSwiper v-if="className == 'img-2'"/>
   </div>
 </template>
 
