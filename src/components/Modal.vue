@@ -49,6 +49,9 @@ export default {
         padding: 22px 20px;
         color: $secondary-color-light;
         border: 1px solid $primary-color;
+        &:focus{
+          outline: none;
+        }
       }
       img{
         width: 18px;
