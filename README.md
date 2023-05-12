@@ -70,7 +70,7 @@ All'interno di questi macro componenti cerco anche dei parziali che possano esse
 
 - Pulsante `"Back to top"` che appare allo scroll del sito, che al click riporta all'inizio della pagina e scompare quando si è raggiunto oppure quando non si è ancora mai scrollato
 
-## Processo di realizzazione dei sito
+## Processo di realizzazione del sito
 
 Dopo aver analizzato la pagina passo quindi alla realizzazione dell'Header, servendomi di un file, chiamato `menus.js` creo un database che contiene le informazioni da stampare dianmicamente all'interno della `nav bar`, faccio quindi ciclare il componente `MenuItem` che conterrà lo stile base del menù e grazie all'uso delle props verrà passato dinamicamente il dato contenuto nel database, questa operazione verrà ripetuta più volte all'interno del progetto.
 
